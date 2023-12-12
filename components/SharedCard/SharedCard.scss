@@ -1,0 +1,44 @@
+@use 'assets/styles/media';
+
+.card {
+  &__body {
+    margin-top: 10px;
+  }
+
+  &__img {
+    width: 495px;
+    margin-bottom: var(--gap-m);
+    overflow: hidden;
+    border-radius: 20px;
+
+    @include media.media-breakpoint-down(xl) {
+      width: 415px;
+    }
+
+    @include media.media-breakpoint-down(md) {
+      width: 100%;
+    }
+  }
+
+  &.large {
+    &__img {
+      height: 495px;
+
+      @include media.media-breakpoint-down(xl) {
+        height: 415px;
+      }
+    }
+  }
+
+  &.medium {
+    &__img {
+      height: 320px;
+    }
+  }
+
+  &.small {
+    &__img {
+      height: 220px;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+@use 'reset';
+@use 'media';
+@use 'colors';
+@use 'fonts';
+@use 'gap';
+@use 'animation';
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Nunito+Sans:opsz,wght@6..12,700&display=swap');
+
+:root {
+  --transition-default: 300ms;
+}

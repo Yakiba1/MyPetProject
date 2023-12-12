@@ -1,0 +1,21 @@
+@use 'assets/styles/media';
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 100px;
+
+    @include media.media-breakpoint-down(xl) {
+      padding: 0 var(--gap3xl) 0 80px;
+    }
+
+    @include media.media-breakpoint-down(l) {
+      padding: 0 var(--gap-l) 0 60px;
+    }
+
+  @include media.media-breakpoint-down(md) {
+    padding: 0 15px 15px;
+  }
+}

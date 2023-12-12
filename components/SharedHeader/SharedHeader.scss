@@ -1,0 +1,12 @@
+@use 'assets/styles/media';
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__logo {
+    display: inline-block;
+    width: 290px;
+  }
+}

@@ -1,0 +1,29 @@
+// npm
+node_modules
+tsconfig.json
+
+// Project scripts
+.scripts
+// Don't lint .js files so that they're for configs
+*.js
+
+// Logging
+*.log*
+
+// Build directories
+.output
+.output/ *
+dist
+dist/*
+
+// Nuxt core directory
+.nuxt
+
+// Nitro directory
+.nitro
+
+// Environment variables
+.env
+
+// Github CI
+.github

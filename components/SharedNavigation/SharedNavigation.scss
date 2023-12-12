@@ -1,0 +1,55 @@
+@use 'assets/styles/media';
+
+.navigation {
+  display: flex;
+  gap: 40px;
+  justify-content: flex-end;
+  padding: 40px;
+  list-style: none;
+
+  &__item {
+    position: relative;
+    font-size: var(--font-size-s);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-black);
+    text-transform: uppercase;
+    list-style: none;
+    cursor: pointer;
+
+    @include media.media-breakpoint-down(xl) {
+      font-size: var(--font-size-xs);
+    }
+
+    &::after,
+    &::before {
+      position: absolute;
+      top: 110%;
+      display: block;
+      width: 0;
+      height: 2px;
+      content: '';
+      background: black;
+      border-radius: 8px;
+      transition: width 1s;
+      transform: translateY(50%);
+    }
+
+    &::before {
+      right: 50%;
+    }
+
+    &::after {
+      left: 50%;
+    }
+
+    &:hover {
+      &::after {
+        width: 50%;
+      }
+
+      &::before {
+        width: 50%;
+      }
+    }
+  }
+}

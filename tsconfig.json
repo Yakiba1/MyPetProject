@@ -1,0 +1,13 @@
+{
+  // https://nuxt.com/docs/guide/concepts/typescript
+  "extends": "./.nuxt/tsconfig.json",
+  "compilerOptions": {
+    "module": "es2022",
+    "moduleResolution": "Node",
+    "allowSyntheticDefaultImports": true,
+    "verbatimModuleSyntax": false
+  },
+  "vueCompilerOptions": {
+    "strictTemplates": true
+  }
+}

@@ -1,0 +1,20 @@
+.slider-item {
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--gap-m);
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: var(--gap-m);
+
+    & .date {
+      font-size: var(--font-size-2xs);
+      font-weight: var(--font-weight-semi-bold);
+    }
+  }
+}

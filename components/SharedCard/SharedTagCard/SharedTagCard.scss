@@ -1,0 +1,14 @@
+@use 'assets/styles/media';
+
+.tag {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  font-size: var(--font-size-xs);
+  border: 1px solid black;
+  border-radius: 26px;
+
+  @include media.media-breakpoint-down(sm) {
+    font-size: var(--font-size-xxs);
+  }
+}

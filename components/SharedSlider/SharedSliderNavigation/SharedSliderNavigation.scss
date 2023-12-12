@@ -1,0 +1,26 @@
+.shared-slider-navigation {
+  display: flex;
+  gap: var(--gap-m);
+
+  &__item {
+    transition: trasform 200ms ease-in;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__button {
+    background: none;
+    border: 0;
+    outline: none;
+
+    &:not(:disabled) {
+      cursor: pointer;
+    }
+
+    &:disabled {
+      opacity: 0.4;
+    }
+  }
+}
